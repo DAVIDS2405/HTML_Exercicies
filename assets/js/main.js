@@ -1,0 +1,1 @@
+confirm("Aceptas los cookies")
