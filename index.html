@@ -29,18 +29,28 @@
         </nav>
     </header>
     <main>
-       <h1>Block line</h1>
-       <p>Em<em> Cursive</em> block line 1</p>
-       <p>Strong <strong>Hey</strong> block line 2</p>
-       <div>hey <small>how are you</small> block line 3</div>
-       <span>hi<br>hello block line 4</span>
-       <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
-        <p>Time <time>2023-01-21</time></p>
-        <p>i <i>hey</i></p>
-        <div>black<b>hello</b></div>
-        <span>underline<u>yes</u></span>
-        <div>Superior<sup>hey</sup></div>
-        <span>Sub <sub>hey</sub></span>
+       <h1>Tag_Attribute</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <p class = "Prueba">Class</p>
+        <p class="Prueba" id = "Parraf-2"> Id en el parrafo</p>
+        <p title="explicacion mas detallada">tooltip</p>
+        <p class="prueba" id="Parraf-3" data-id="1234567890" data-user="saul" data-date-of-birth>Datos pasados en la etiqueta</p>
+        <script>
+            const dato = document.getElementById("Parraf-2").textContent
+            console.log(dato)
+
+            const dato2 = document.getElementById("Parraf-3")
+            console.log(dato2.dataset.id)
+            console.log(dato2.dataset.user)
+            console.log(dato2.dataset.dateOfBirth = "17-05-2000")
+        </script>
+
+    </form>
     </main>
     <footer>
         <p>David Basantes</p>
