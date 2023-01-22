@@ -29,11 +29,73 @@
     </header>
     <hr>
     <main>
-        <h1>Span</h1>
-        <p>My mother has <span style="color:blue">blue</span> eyes.</p>
-        <q>Build a future where people live in harmony with nature.</q>
-        <p>The HTML <code>button</code> tag defines a clickable button.</p>
-        <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+        <h1>Form</h1>
+        <form>
+            <label for="fname">First name:</label>
+            <br>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="lname">Last name:</label>
+            <br>
+            <input type="text" id="lname" name="lname">
+            <br>
+            <br>
+            <button>Push</button>
+        </form>
+        <h2>Input</h2>
+        <input type="date" />
+        <input type="datetime-local" />
+        <input type="time" />
+        
+        <div>
+            <label>Ingresa el email:<input type="email" /></label>
+        </div>
+        <div>
+            <label>Ingresa el password:<input type="password" /></label>
+        </div>
+        <label>Ingresa la url:<input type="url" /></label>
+        <h2>Elements</h2>
+        <form action="">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" />
+                </div>
+                <label for="surname">Apellidos</label>
+                <input type="text" id="surname" />
+            </fieldset>
+            <label for="task">Tarea 1</label>
+            <progress id="task" max="100" value="10"></progress>
+            <br>
+            <input type="file" />
+            <br>
+            <label for="language">Css</label>
+            <meter id="language" min="0" max="100" value="10" low="30" high="75" optimum="50"></meter>
+            <br>
+            <textarea name="" id="message" cols="50" rows="5"></textarea>
+            
+            <input type="reset">
+
+        </form>
+        <h2>Post and get</h2>
+        <form action="">
+            <form action="enviar.html" method="GET">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" />
+            
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname" />
+            
+                <input type="submit" />
+            </form>
+        </form>
+        <h2>Contaniners</h2>
+        <form action="">
+            <input type="email" name="correo" placeholder="Escribe tu correo" required>
+        </form>
+        
+        
     </main>
     <hr>
     <footer>
