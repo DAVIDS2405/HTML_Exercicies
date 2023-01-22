@@ -29,80 +29,39 @@
     </header>
     <hr>
     <main>
-        <h1>Form</h1>
-        <form>
-            <label for="fname">First name:</label>
-            <br>
-            <input type="text" id="fname" name="fname">
-            <br>
-            <label for="lname">Last name:</label>
-            <br>
-            <input type="text" id="lname" name="lname">
-            <br>
-            <br>
-            <button>Push</button>
-        </form>
-        <h2>Input</h2>
-        <input type="date" />
-        <input type="datetime-local" />
-        <input type="time" />
-        
-        <div>
-            <label>Ingresa el email:<input type="email" /></label>
-        </div>
-        <div>
-            <label>Ingresa el password:<input type="password" /></label>
-        </div>
-        <label>Ingresa la url:<input type="url" /></label>
-        <h2>Elements</h2>
-        <form action="">
-            <fieldset>
-                <legend>Datos Personales</legend>
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" />
-                </div>
-                <label for="surname">Apellidos</label>
-                <input type="text" id="surname" />
-            </fieldset>
-            <label for="task">Tarea 1</label>
-            <progress id="task" max="100" value="10"></progress>
-            <br>
-            <input type="file" />
-            <br>
-            <label for="language">Css</label>
-            <meter id="language" min="0" max="100" value="10" low="30" high="75" optimum="50"></meter>
-            <br>
-            <textarea name="" id="message" cols="50" rows="5"></textarea>
-            
-            <input type="reset">
-
-        </form>
-        <h2>Post and get</h2>
-        <form action="">
-            <form action="enviar.html" method="GET">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" />
-            
-                <label for="surname">Apellido</label>
-                <input type="text" id="surname" name="surname" />
-            
-                <input type="submit" />
-            </form>
-        </form>
-        <h2>Contaniners</h2>
-        <form action="">
-            <input type="email" name="correo" placeholder="Escribe tu correo" required>
-        </form>
-        
-        
+        <h1>audio</h1>
+        <audio src="/assets/music/Bleach.mp3" controls  muted ></audio>
+        <br>
+        <h1>Images</h1>
+        <figure>
+            <img src="/assets/img/descarga (1).png" alt="descarga">
+            <figcaption>Un likesito</figcaption>
+        </figure>
+        <br>
+        <h1>Pictures</h1>
+        <picture>
+            <source srcset="/assets/img/descarga.png" media="(max-width:1200px)" alt="logos">
+            <source srcset="/assets/img/bg.jpeg"  media="(min-width:1200px)" alt = "logos">
+            <style>
+                img{
+                    max-width: 30%;
+                }
+            </style>
+            <img src="/assets/img/bg.jpeg" alt="logos">
+        </picture>
+        <br>
+        <h1>Video</h1>
+        <style>
+            video {
+                max-width: 50%;
+            }
+        </style>
+        <video controls muted loop preload="auto" poster="/assets/img/descarga.png">
+            <source src="/assets/video/video.mp4" />
+        </video>
     </main>
     <hr>
     <footer>
-        <address>
-            <a href="mailto:david@rock.com">jim@rock.com</a><br>
-            <a href="tel:+59395552368">(311) 555-2368</a>
-        </address>
         <p>David Basantes</p>
     </footer>
 </body>
