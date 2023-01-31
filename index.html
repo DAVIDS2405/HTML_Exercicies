@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Autor: David Basantes, Pagina web: Personal">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/hint.min.css">
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+    <script src="/assets/js/main.js"></script>
     <title>Estructura</title>
 </head>
 <body>
     <header>
-        <section id="Inicio">
+        <nav id="nav" class="nav">
+            <ul>
+                <li><a href="#Inicio">Sobre mi</a></li>
+                <li><a href="#contac">Contacto</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#proyects">Proyectos</a></li>
+
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <section id="Inicio" class="Inicio">
             <h1>David Sebastian Basantes Lucero</h1>
             <p>Software Development</p>
         </section>
+        <hr>
+        
         
 
-        <nav id = "nav" class="nav">
-            <ul>
-                <li><a href="">Sobre mi</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Proyectos</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
     <main>
@@ -38,6 +49,7 @@
                     <li><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:5a0e1066-37b4-3cf1-84f3-c25439b96b17"
                             class="button">Descargar CV [ENG]</a></li>
                 </ul>
+                
                 <h2>¿Que me gusta hacer?</h2>
                 <p style="text-align:justify">Me gusta realizar ensambles de computadoras, grabar videos sobre el mundo de la tecnologia
                     o cosas de mi agrado en Tiktok, Twitch, Youtube, ademas de ver anime, series y peliculas.</p>
@@ -50,19 +62,29 @@
             </main>
 
         </section>
+        <hr>
 
-        <section class="Skills">
+        <section class="Skills" id = "skills">
             <h1>Skills</h1>
             <div class="wrap">
                 <div class="galeria">
-                    <div class="C++"><img src="assets/img/c++.webp" alt="c++" height="150px"></div>
-                    <div class="Java"><img src="assets/img/java.webp" alt="java" height="150px"></div>
-                    <div class="HTML"><img src="assets/img/html.webp" alt="html" height="150px"></div>
-                    <div class="CSS"><img src="assets/img/css.webp" alt="css" height="150px"></div>
+                    <div class="C++ hint--top"aria-label="C++">
+                        <img src="assets/img/c++.webp" alt="c++" height="150px">
+                    </div>
+                    <div class="Java hint--top" aria-label="JAVA">
+                        <img src="assets/img/java.webp" alt="java" height="150px">
+                    </div>
+                    <div class="HTML hint--top" aria-label="HTML">
+                        <img src="assets/img/html.webp" alt="html" height="150px">
+                    </div>
+                    <div class="CSS hint--top" aria-label="CSS">
+                        <img src="assets/img/css.webp" alt="css" height="150px">
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <hr>
+        <section id = "proyects" class="Proyects">
             <header class="major">
                 <h1>Proyectos</h1>
             </header>
@@ -97,8 +119,9 @@
         </section>
 
     </main>
+    <hr>
 
-    <footer>
+    <footer id = "contac" class="Contact">
         <ul class="icons">
             <h1>Contactos</h1>
             <p>Me puedes contactar en las siguientes redes sociales.</p>

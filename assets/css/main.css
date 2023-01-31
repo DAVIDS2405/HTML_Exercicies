@@ -1,0 +1,140 @@
+body{
+    background: linear-gradient(to right, #333333, #dd1818);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav */
+.nav{
+    
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav ul{
+    list-style: none;
+    text-align: center;
+    line-height: 45px;
+}
+.nav a {
+    text-decoration: none;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.nav  a:hover{
+    color: #000000;
+    transition: 0.3s;
+}
+.nav li{
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+   
+}
+.Inicio {
+    text-align: center;
+    font-size: 30px;
+    padding: 0;
+    margin-top:10px ;
+}
+
+/* Intro */
+.main{
+    font-size: 22px;
+    text-align: center;
+}
+
+.main p{
+    color: white;
+}
+.CV{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.CV  a, .CV li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+.CV a {
+    
+    border-color: rgb(255, 255, 255);
+}
+.CV a:hover {
+    color: #000;
+    transition: 0.2s;
+    
+}
+.CV li:hover{
+    border-color: #000000;
+    transition: 0.3s;
+ }
+
+.CV li {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    width: 150px;
+    text-align: center;
+}
+.Hobbies {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.Hobbies a{
+    text-decoration: none;
+    color: white;
+    
+}
+.Hobbies li{
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    width: 150px;
+    text-align: center;
+}
+
+.Hobbies a:hover {
+    color: #000;
+    transition: 0.2s;
+
+}
+
+.Hobbies li:hover {
+    border-color: #000000;
+    transition: 0.3s;
+}
+
+.wrap > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.wrap{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fir, minmax(250px, 1fr));
+    grid-auto-rows:200px;
+    grid-auto-flow: dense;
+}
