@@ -8,6 +8,7 @@ body{
     font-family: 'Red Hat Display';
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat:no-repeat;
+    background-size: contain;
     background-color: hsl(225, 100%, 94%); 
     min-height: 100vh;
     display: flex;
@@ -22,7 +23,9 @@ body{
     border-radius: 1.5rem;
     overflow: hidden;
 }
-
+.Image img {
+    width: 100%;
+}
 
 .Card_description{
     padding: 0.7rem;
