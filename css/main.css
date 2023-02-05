@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;    
+   
+}
+body{
+    font-family: 'Red Hat Display';
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat:no-repeat;
+    background-color: hsl(225, 100%, 94%);
+   
+}
+.card{
+    position: absolute;
+    top: 2.0rem;
+    left: 35.0rem;
+    background:rgb(255, 255, 255);
+    max-width: 30.0rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+
+.Card_description{
+    padding: 0.7rem;
+    text-align: center;
+}
+.Description h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 2.0rem;
+    margin-bottom: 2.0rem;
+
+}
+.Description p{
+    justify-content: center;
+    color: hsl(0, 0%, 59%);
+}
+.Description{
+    margin-top: 1.0rem;
+    margin-bottom: 2.0rem;
+}
+.Plan{
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1.6rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1.0rem;
+}
+
+.Plan main{
+    margin-right: 9.0rem;
+}
+.Plan main h3{
+    color: hsl(223, 47%, 23%);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.Plan main p{
+    font-size: 1.0rem;
+    color:hsl(0, 0%, 59%);
+}
+.Plan footer a{
+    color: hsl(223, 47%, 23%);
+
+}
+
+.Paymethod{
+    padding: 0.7rem;
+    text-align: center;
+    margin-bottom: 2.0rem;
+}
+.Paymethod a {
+    display: block;
+}
+.Paymethod a.Proced_btn{
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background: hsl(245, 75%, 52%);
+    padding: 1.0rem;
+    border-radius: 1.0rem;
+    margin-bottom: 2.0rem;
+}
+.Paymethod a.Cancel_btn{
+    text-decoration: none;
+    font-weight: 900;
+    color: hsl(0, 0%, 59%);
+}
+.attribution{
+    margin-left: 5.0rem;
+}
+
