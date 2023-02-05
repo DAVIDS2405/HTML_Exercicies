@@ -14,7 +14,7 @@ body{
 .card{
     position: absolute;
     top: 2.0rem;
-    left: 35.0rem;
+    left: 30.0rem;
     background:rgb(255, 255, 255);
     max-width: 30.0rem;
     border-radius: 1.5rem;
@@ -91,6 +91,6 @@ body{
     color: hsl(0, 0%, 59%);
 }
 .attribution{
-    margin-left: 5.0rem;
+    margin-left: -5.0rem;
 }
 
