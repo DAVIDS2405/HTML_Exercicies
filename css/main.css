@@ -8,14 +8,15 @@ body{
     font-family: 'Red Hat Display';
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat:no-repeat;
-    background-color: hsl(225, 100%, 94%);
-    height: 100%;
-    width: 100%;
+    background-color: hsl(225, 100%, 94%); 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 .card{
     position: absolute;
     top: 1.0rem;
-    left: 30.0rem;
     background:rgb(255, 255, 255);
     max-width: 30.0rem;
     border-radius: 1.5rem;
@@ -91,7 +92,5 @@ body{
     font-weight: 900;
     color: hsl(0, 0%, 59%);
 }
-.attribution{
-    margin-left: -5.0rem;
-}
+
 
