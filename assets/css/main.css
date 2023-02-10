@@ -2,203 +2,215 @@
     margin: 0;
     padding: 0;
 }
-
-header nav{
-    background: linear-gradient(90deg, #253bf5 0%, #027f76 100%);;
-    
-    
-    height: 80px;
+/*Conteiner general*/
+.container{
+    display: grid;
     width: 100%;
 }
-
-body {
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+/*Conteiner general Presentation*/
+.main{
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
 }
 
-
-header nav  img{
-    width: 50px;
-    height: 50px;
-   
-}
-.Logo_enlace {
-    position: absolute;
-    padding: 10px 10px 10px 10px;
+.presentation h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin: 10px 10px;
+    color: #2E3F43;
+    font-weight: bold;
+    padding: 10px 10px;
 }
 
-header nav ul li a{
+.presentation p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+.presentation button {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: #F1904F;
+    border-radius: 16px;
+    border: none;
     color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 6px;
-    font-size: 16px;
-    padding: 6px 20px 6px 20px;
+    width: 150px;
+    text-align: left;
 }
-header nav ul li a:hover{
-    color: black;
-    background: yellow;
+.presentation button:hover{
+    background-color: #2E3F43;
+    transition: 0.7s;
 }
 
-
-header nav ul{
-    list-style-type: none;
-    float: right;
-    margin-right: 10px;
+.presentation button i {
+    font-size: 1.5rem;
     
-}
-header nav ul li{
-    display: inline-block;
-    line-height: 75px;
-    margin: 0px 5px 0px 5px;
+    color: white;
+    width: 50%;
+    text-align: right;
 }
 
-footer{
-    padding-top: 10px;
-    text-align: center;
-    background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-main{
-    display: flex;
-    height: 100%;
-
+.image {
+    margin: 20px auto;
 }
 
-main .section.Poke_View {
-    width: 100%;
-    display: flex;
+.image img {
     justify-content: center;
     align-items: center;
+    height: 300px;
+}
+
+/*Conteiner general Services*/
+
+.our_services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "IMG1 IMG1 Image2 Image3"
+        "IMG1 IMG1 Image4 Image5";
+    padding: .5em;
+}
+
+.Our{
    
-}
-main .section.Poke_View .Card{
-    
-    transition: none;
-    animation: holoCard 12s ease 0s 1;
-    filter: brightness(1) contrast(1);
-    transition: all .33s ease;
-    box-shadow: -0.4rem 0.10rem 1.9rem 0.4rem#1cb5e0;
-    background: linear-gradient(to right, #000046, #1cb5e0);
-    border-radius: 16px;
-    overflow: hidden;
-    padding: 5px;
-    
-    border: 3px solid black;
-}
-main .section.Poke_View .Card img{
-    height: 20rem;
-    border-radius: 50px;
-    width: 100%;
-
-}
-
-.description span,
-.description li {
-    font-size: 20px;
-}
-
-.description span {
+    margin: 20px 20px;
+    text-align: center;
     font-weight: bold;
-    background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    text-transform: uppercase;
 }
-
-.description h1 {
-    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    padding-top: 10px;
-    text-align: center;
-
+.Plate_2_Person img{
+    height: 25.5rem;
+    width: 100%;
+    object-fit: cover;
+    
 }
-
-.description ul li.Type {
-    background: rgb(0, 47, 255);
-    color: white;
-    border-radius: 16px;
-    padding: 7px;
-    width: 185px;
-    text-align: center;
-    position: relative;
-    top: -80px;
-
-
+.Image img{
+    height: 10rem;
+    width:100%;
+    object-fit: cover;
 }
-
-.description ul li {
-    letter-spacing: 1px;
-    padding: 4px;
-    color: rgb(255, 255, 255);
+.Plate_2_Person{
+    height: 150px;
+    grid-area: IMG1;
+    
+    
 }
-
-.description {
-    background: linear-gradient(to left, #000428, #004e92);
-
-    border-radius: 20px;
+.Plate_1{
+    margin: 20px 20px;
+    grid-area: Image2;
 }
-
-.description ul {
-    list-style-type: none;
+.Plate_2 {
+    
+    margin: 20px 20px;
+    grid-area: Image3;
 }
-
-
-
-
-main .section.Poke {
-    width: 280px;
-    height: 100%;
-
-}
-
-main .section.Poke .Image_Poke{
-    cursor: pointer;
-}
-main .section.Poke .Image_Poke .Change {
-    opacity: 0.7;
-}
-main .section.Poke .Image_Poke .Change:hover {
-    opacity: 1;
-}
-main .section.Poke .Image_Poke .Active {
-    opacity: 1;
-    box-shadow: 20px 5px 14px 3px black;
-}
-main .section.Poke .Image_Poke img{
-    display: block;
-    background-color: rgb(82, 82, 82);
-    border-radius: 13px;
-    margin: 10px 50px 10px 55px;
-    padding: 10px;
-    height: 125px;
-    width: 125px;
+.Plate_3 {
    
+    margin: 20px 20px;
+    grid-area: Image4;
+}
+.Plate_4 {
+    
+    margin: 20px 20px;
+    grid-area: Image5;
+}
+/*Conteiner general Menu*/
+
+.Menu{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "Image1 Image2 Image3 Image4 Image5";
+    
+}
+.ImageM:nth-child(1){
+    padding: 10px 10px;
+    grid-area: Image1;
+}
+.ImageM:nth-child(2) {
+    padding: 10px 10px;
+    grid-area: Image2;
+}
+.ImageM:nth-child(3) {
+    padding: 10px 10px;
+    grid-area: Image3;
+}
+.ImageM:nth-child(4) {
+    padding: 10px 10px;
+    grid-area: Image4;
+}
+.ImageM:nth-child(5) {
+    padding: 10px 10px;
+    grid-area: Image5;
 }
 
-@keyframes holoCard {
+.ImageM img{
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
+}
+.ImageM button {
+   width: 100%;
+   text-align: end;
+   background: none;
+   border: none;
+    
+}
+.ImageM i:hover {
+    color: #F1904F;
+    transition: 0.2s;
+}
+.ImageM i:active {
+    color: #006eff;
+    transition: 0.1s;
+}
+.ImageM button:focus{
+    color: #006eff;
+}
 
-    0%,
-    100% {
-        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+
+@media screen and (max-width: 760px) {
+    
+
+    .our_services {
+            
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            grid-template-areas:
+                "IMG1 IMG1 Image2 Image3"
+                "IMG1 IMG1 Image2 Image3"
+                "IMG1 IMG1 Image4 Image5"
+                ".     .   Image4 Image5";
+            
     }
 
-    5%,
-    8% {
-        transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
-    }
+     .Menu {
+         
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "Image1" 
+            "Image2" 
+            "Image3" 
+            "Image4" 
+            "Image5";
 
-    13%,
-    16% {
-        transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+     }
+    .ImageM i{
+        font-size: 20px;
     }
-
-    35%,
-    38% {
-        transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+    .ImageM img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
     }
-
-    55% {
-        transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
-    }
+        .ImageM button:focus {
+            color: #006eff;
+        }
 }
