@@ -1,0 +1,140 @@
+/*
+All in css
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+}
+body{
+    background:linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+header{
+    background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-bottom: 20px;
+}
+footer{
+    padding-top: 10px;
+    text-align: center;
+    background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+/*
+Conteniner pokemon card use to create a more pokemon card
+*/
+.container_Pokemon_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+/*
+this div use only in charizard
+*/
+.Card_Charizard {
+    transition: none;
+    animation: holoCard 12s ease 0s 1;
+    filter: brightness(1) contrast(1);
+    transition: all .33s ease;
+    box-shadow:  -0.4rem 0.10rem 1.9rem 0.4rem#1cb5e0;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 5px;
+
+}
+
+
+
+/*
+Image of charizard whit megaevolution x
+*/
+.Image_Charizard img {
+    border-radius: 50px;
+    width: 30rem;
+    border: 1px solid blue;
+    
+}
+/*
+pokemon stats and description
+*/
+
+.description span,.description li{
+    font-size: 20px;
+}
+.description span{
+    font-weight: bold;
+    background: linear-gradient(to left,#1fa2ff, #12d8fa, #a6ffcb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.description h1{
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+.description ul li.Type{
+    background: rgb(0, 47, 255);
+    color: white;
+    border-radius: 16px;
+    padding: 7px;
+    width: 185px;
+    text-align: center;
+    position: relative;
+    top: -80px;
+    
+
+}
+.description ul li{
+    letter-spacing: 1px;
+    padding: 4px;
+    color:rgb(255, 255, 255);
+}
+.description{
+    background: linear-gradient(to left, #000428, #004e92);
+   
+    border-radius: 20px;
+}
+.description ul {
+    list-style-type: none;
+}
+
+
+
+
+@keyframes holoCard {
+
+    0%,
+    100% {
+        transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+
+    5%,
+    8% {
+        transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+    }
+
+    13%,
+    16% {
+        transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+    }
+
+    35%,
+    38% {
+        transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+    }
+
+    55% {
+        transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+    }
+}
+
