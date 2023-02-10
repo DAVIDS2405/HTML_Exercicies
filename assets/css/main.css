@@ -1,22 +1,57 @@
-/*
-All in css
-*/
 *{
     margin: 0;
     padding: 0;
 }
-header{
-    text-align: center;
+
+header nav{
+    background: linear-gradient(90deg, #253bf5 0%, #027f76 100%);;
+    
+    
+    height: 80px;
+    width: 100%;
 }
-body{
-    background:linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
 }
-header{
-    background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    padding-bottom: 20px;
+
+
+header nav  img{
+    width: 50px;
+    height: 50px;
+   
 }
+.Logo_enlace {
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 6px 20px 6px 20px;
+}
+header nav ul li a:hover{
+    color: black;
+    background: yellow;
+}
+
+
+header nav ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 10px;
+    
+}
+header nav ul li{
+    display: inline-block;
+    line-height: 75px;
+    margin: 0px 5px 0px 5px;
+}
+
 footer{
     padding-top: 10px;
     text-align: center;
@@ -24,65 +59,62 @@ footer{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-/*
-Conteniner pokemon card use to create a more pokemon card
-*/
-.container_Pokemon_card{
+main{
+    display: flex;
+    height: 100%;
+
+}
+
+main .section.Poke_View {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
+   
 }
-/*
-this div use only in charizard
-*/
-.Card_Charizard {
+main .section.Poke_View .Card{
+    
     transition: none;
     animation: holoCard 12s ease 0s 1;
     filter: brightness(1) contrast(1);
     transition: all .33s ease;
-    box-shadow:  -0.4rem 0.10rem 1.9rem 0.4rem#1cb5e0;
+    box-shadow: -0.4rem 0.10rem 1.9rem 0.4rem#1cb5e0;
     background: linear-gradient(to right, #000046, #1cb5e0);
     border-radius: 16px;
     overflow: hidden;
     padding: 5px;
-
-}
-
-
-
-/*
-Image of charizard whit megaevolution x
-*/
-.Image_Charizard img {
-    border-radius: 50px;
-    width: 30rem;
-    border: 1px solid blue;
     
+    border: 3px solid black;
 }
-/*
-pokemon stats and description
-*/
+main .section.Poke_View .Card img{
+    height: 20rem;
+    border-radius: 50px;
+    width: 100%;
 
-.description span,.description li{
+}
+
+.description span,
+.description li {
     font-size: 20px;
 }
-.description span{
+
+.description span {
     font-weight: bold;
-    background: linear-gradient(to left,#1fa2ff, #12d8fa, #a6ffcb);
+    background: linear-gradient(to left, #1fa2ff, #12d8fa, #a6ffcb);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-.description h1{
+
+.description h1 {
     background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     padding-top: 10px;
     text-align: center;
-    
+
 }
-.description ul li.Type{
+
+.description ul li.Type {
     background: rgb(0, 47, 255);
     color: white;
     border-radius: 16px;
@@ -91,25 +123,58 @@ pokemon stats and description
     text-align: center;
     position: relative;
     top: -80px;
-    
+
 
 }
-.description ul li{
+
+.description ul li {
     letter-spacing: 1px;
     padding: 4px;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
-.description{
+
+.description {
     background: linear-gradient(to left, #000428, #004e92);
-   
+
     border-radius: 20px;
 }
+
 .description ul {
     list-style-type: none;
 }
 
 
 
+
+main .section.Poke {
+    width: 280px;
+    height: 100%;
+
+}
+
+main .section.Poke .Image_Poke{
+    cursor: pointer;
+}
+main .section.Poke .Image_Poke .Change {
+    opacity: 0.7;
+}
+main .section.Poke .Image_Poke .Change:hover {
+    opacity: 1;
+}
+main .section.Poke .Image_Poke .Active {
+    opacity: 1;
+    box-shadow: 20px 5px 14px 3px black;
+}
+main .section.Poke .Image_Poke img{
+    display: block;
+    background-color: rgb(82, 82, 82);
+    border-radius: 13px;
+    margin: 10px 50px 10px 55px;
+    padding: 10px;
+    height: 125px;
+    width: 125px;
+   
+}
 
 @keyframes holoCard {
 
@@ -137,4 +202,3 @@ pokemon stats and description
         transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
     }
 }
-

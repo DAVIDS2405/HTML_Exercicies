@@ -5,39 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="/assets/js/main.js"></script>
-    <title>Pokemon</title>
+    
+    <title>Pokemon card presentation</title>
 </head>
 <body>
-    
     <header>
-        <h1>Charizard Card</h1>
-    </header>
-
-   <main class="container_Pokemon_card">
-        <div class="Card_Charizard">
-            <div class="Image_Charizard">
-                <img src="/assets/image/Charizard.jpg" alt="Charizard">
-            </div>
-            <div class="description">
-                <h1>Charizard Mega x</h1>
-                <ul>
-                    <li class="Type"> <span >Tipo:</span> Fuego Dragon</li>
-                    <li> <span>Habilidad:</span> Mar LLamas</li>
-                    <li> <span>Habilidad oculta:</span> Poder solar</li>
-                    <li> <span>Peso:</span> 90,5kg</li>
-                    <li> <span>Altura:</span> 1,7m</li>
-                </ul>
-            </div>
-        </div>
        
     
-    
-   </main>
+        <nav>
+            <a href="#" class="Logo_enlace">
+                <img src="/assets/images/pokebola.png" alt="logo">
+            </a>
+            <ul >
+                <li><a href="">item 1</a></li>
+                <li><a href="">item 2</a></li>
+                <li><a href="">item 3</a></li>
+                <li><a href="">item 4</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <main>
 
+        <section class="section Poke">
+           
+            
+            <div class="Image_Poke">
+                
+                <img class="Change Active" src="/assets/images/Charizard.png" alt="Charizard Mega x">
+                <img class="Change" src="/assets/images/Groudon.png" alt="Groudon Primigenio">
+                <img class="Change" src="/assets/images/Pikachu.png" alt="Pikachu">
+                <img class="Change" src="/assets/images/Ryquaza.png" alt="Mega Ryquaza ">
+            </div>
 
+        </section>
+
+        <section class="section Poke_View">
+            <div class="Card">
+                <div class="Image_Poke">
+                    <img class="Image Change" src="assets/images/Charizard.png" alt="Charizard">
+                </div>
+                <div class="description ">
+                    <h1 class="Name">Charizard Mega x</h1>
+                    <ul class="Description Charizard">
+                        <li class="Type"> <span>Tipo:</span> Fuego Dragon</li>
+                        <li > <span>Habilidad:</span> Mar LLamas</li>
+                        <li> <span>Habilidad oculta:</span> Poder solar</li>
+                        <li> <span>Peso:</span> 90,5kg</li>
+                        <li> <span>Altura:</span> 1,7m</li>
+                    </ul>
+                </div>
+
+            </div>
+              
+        </section>
+
+    </main>
     <footer>
         <p>Coding by David Basantes</p>
     </footer>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
