@@ -1,0 +1,156 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&family=Poppins:wght@200;400;600&display=swap');
+ body{
+    font-family: 'Poppins';
+    background: hsl(0, 0%, 98%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ header h1  {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    
+ }
+ header h1{
+    font-weight: 200;
+ }
+ header h1 span{
+    font-weight: bold;
+ }
+ header p{
+    font-weight: 200;
+    text-align: center;
+ }
+ main{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3 ,1fr );
+    
+ }
+ .card{
+    width: 80%;
+    height: 200px;
+    font-size: 15px;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: -1px 3px 20px 10px hsl(229, 6%, 66%);
+ }
+ .card .header{
+    display: flex;
+    flex-direction: column;
+ }
+ .card .header img{
+    height: 60px;
+    width: 60px; 
+    margin-left: auto;
+ }
+.card{
+    text-align: center;
+}
+ .card h1{
+    
+    font-weight: 400;
+ }
+ .card p {
+    
+     font-weight: 200;
+ }
+
+ .card-1{
+    margin: auto;
+    grid-row: 2;
+    grid-column: 1;
+    border-top: 10px solid hsl(180, 62%, 55%);
+ }
+ .card-2{
+    margin: auto;
+    grid-column: 2;
+    grid-row:  1;
+    border-top: 10px solid hsl(0, 78%, 62%);
+    transform: translateY(40%)
+    
+ }
+ .card-3{
+    margin: auto;
+    grid-column: 2;
+    grid-row: 3;
+    border-top: 10px solid hsl(34, 97%, 64%);
+    transform: translateY(-40%)
+ }
+ .card-4{
+    margin: auto;
+    grid-column: 3;
+    grid-row: 2;
+    border-top: 10px solid hsl(212, 86%, 64%);
+ }
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media screen and (max-width: 780px) {
+    main{
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(2,2fr);
+    }
+    .card{
+        width: 80%;
+        height: 250px;
+        margin: 10px auto;
+    }
+    .card img{
+        margin-top: 30px;
+    }
+    .card-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .card-2{
+        grid-column: 2/2;
+        
+        transform: none;
+    }
+    .card-3{
+        grid-column: 1/2;
+        grid-row:2 ;
+        transform: none;
+    }
+    .card-4{
+        grid-column: 2;
+    }
+    
+ }
+
+ @media screen and (max-width: 576px){
+    header{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    main {
+        width: 100%;
+        grid-template-columns: repeat(1, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+    
+    .card {
+        margin: 10px auto;
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+ }
