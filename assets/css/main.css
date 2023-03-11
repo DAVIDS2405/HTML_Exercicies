@@ -67,3 +67,51 @@
 
 /* Footer */
 
+.container.footer{
+    display: flex;
+    width: 100%;
+    background: #212529;
+    padding: 1.5rem;
+}
+.container.footer img{
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer.ubicacion {
+    width: 100%;
+    text-align: center;
+}
+
+
+.Copyright.Contact.Footer{
+    border-top: 1px solid white;
+    background-color: #212529;
+    display: flex;
+    padding: 1.5rem;
+    
+}
+.Copyright.Footer{
+    text-align: left;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.Contac.social.media{
+    text-align: right;
+    display: flex;
+}
+
+.Contac.social.media a{
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+
+}
+
