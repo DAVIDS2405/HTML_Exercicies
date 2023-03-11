@@ -4,6 +4,53 @@
     box-sizing: border-box;
 }
 
+/* Nav */
+.container.nav{
+    display: flex;
+    background-color: #212529;
+    width: 100%;
+}
+.container.nav ul {
+    margin-right: 20px;
+    width: 100%;
+    text-align:right;
+    margin-top: 40px;
+    list-style: none;
+}
+.container.nav img{
+    height: 100px
+}
+.container.nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.container.nav button{
+    background-color: #ae7f41;
+    color: white;
+    width: 10%;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*Hovers Nav*/
+.container.nav button:hover{
+    background-color: #ae7f41e7;
+}
+.container.nav ul li a:hover{
+    color: #bbb8b8;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background: #212529;
+}
+::-webkit-scrollbar-thumb{
+    background: #ae7f41;
+    border-radius: 20px;
+    
+}
+
 /* About us */
 
 
@@ -18,4 +65,5 @@
 
 /* Ubicaciones */
 
+/* Footer */
 
