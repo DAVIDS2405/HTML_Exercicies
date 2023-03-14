@@ -14,6 +14,11 @@
     background-color: #212529;
     width: 100%;
 }
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
 .container.nav ul {
     margin-right: 20px;
     width: 100%;
@@ -127,6 +132,7 @@
 /* Productos */
 .Product_Header{
     text-align: center;
+    margin-top: 110px;
 }
 .Container.Product{
     display: grid;
@@ -135,15 +141,17 @@
     gap: 20px;
     padding: 20px;
 }
-.item1 img, .item2 img, .item3 img, .item5 img{
+.item1 .image, .item2 .image, .item3 .image, .item4 .image, .item5 .image{
+    text-align: center;
+}
+.item1 .image img, .item2 .image img, .item3 .image img, .item5 .image img{
     height: 150px;
     border-radius: 6px;
-    margin: 10px 87px;
+    
 }
 .item4 img{
     border-radius: 6px;
     height: 145px;
-    margin: 10px 60px;
 }
 .item1, .item2,.item3,.item4,.item5{
     border-radius: 6px;
@@ -156,12 +164,14 @@
 .item4 h2 ,
 .item5 h2 {
     text-align: center;
+    text-justify: auto;
 }
 .item1 p,
 .item2 p,
 .item3 p,
 .item4 p,
 .item5 p {
+    text-justify: auto;
     text-align: center;
 }
 .item1 button,
@@ -172,7 +182,7 @@
     cursor: pointer;
     height: 40px;
     width: 70%;
-    margin: 10px 15%;
+    margin: 12px 15%;
     background: black;
     color: white;
     border: 1px solid;
