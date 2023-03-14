@@ -1,8 +1,12 @@
+/* Font family*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Open+Sans&family=Poppins:wght@200;400;600&family=Sono:wght@400;600&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
 }
+
 
 /* Nav */
 .container.nav{
@@ -37,6 +41,22 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
 }
 
+.checkbtn {
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: end;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
 /*Hovers Nav*/
 .container.nav button:hover{
 
@@ -50,6 +70,7 @@
 }
 
 
+
 ::-webkit-scrollbar{
     width: 5px;
     background: #212529;
@@ -59,21 +80,8 @@
     border-radius: 20px;
     
 }
-.checkbtn{
-    margin-top: 30px;
-    margin-right: 20px;
-    text-align: end;
-    width: 100%;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    display: none;
-    
-}
-#check{
-    display: none;
-}
 
+/* Burger */
 @media screen and (max-width: 952px) {
     
 }
@@ -117,6 +125,9 @@
 
 
 /* Productos */
+.Product_Header{
+    text-align: center;
+}
 .Container.Product{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -127,32 +138,60 @@
 .item1 img, .item2 img, .item3 img, .item5 img{
     height: 150px;
     border-radius: 6px;
-    margin: 10px 53px;
+    margin: 10px 87px;
 }
 .item4 img{
     border-radius: 6px;
     height: 145px;
-    margin: 10px 34.5px;
+    margin: 10px 60px;
 }
 .item1, .item2,.item3,.item4,.item5{
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 0 0 0.2rem rgb(250, 250, 250);
 }
-.item1{
-
+.item1 h2 ,
+.item2 h2 ,
+.item3 h2 ,
+.item4 h2 ,
+.item5 h2 {
+    text-align: center;
 }
-.item2{
-   
+.item1 p,
+.item2 p,
+.item3 p,
+.item4 p,
+.item5 p {
+    text-align: center;
 }
-.item3{
-
+.item1 button,
+.item2 button,
+.item3 button,
+.item4 button,
+.item5 button {
+    cursor: pointer;
+    height: 40px;
+    width: 70%;
+    margin: 10px 15%;
+    background: black;
+    color: white;
+    border: 1px solid;
+    border-radius: 16px;
 }
-.item4{
-
+.item1:hover,
+.item2:hover,
+.item3:hover,
+.item4:hover,
+.item5:hover {
+    box-shadow: 0 0 0 0.2rem rgb(212, 212, 212);
+    transition: 0.3s;
 }
-.item5{
-
+.item1 button:hover,
+.item2 button:hover,
+.item3 button:hover,
+.item4 button:hover,
+.item5 button:hover {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
 }
 /* Ubicaciones */
 
@@ -188,12 +227,34 @@
     width: 100%;
     color: white;
 }
-.Contac.social.media{
-    text-align: right;
+.Contac.social.media ul {
     display: flex;
+    
+}
+.Contac.social.media ul li{
+    list-style: none;
+}
+.Contac.social.media ul li .fa-brands {
+    color: #ffffff;
+    font-size: 25px;
+    transition: .5s;
+}
+.Contac.social.media ul li .fa-regular {
+    color: #ffffff;
+    font-size: 25px;
+    transition: .5s;
+}
+.Contac.social.media ul li .fa-brands:hover {
+    color: #000000;
+}
+.Contac.social.media ul li .fa-regular:hover {
+    color: #000000;
 }
 
+
 .Contac.social.media a{
+    text-decoration: none;
+    font-style: none;
     text-align: center;
     width: 100%;
     font-size: 25px;
@@ -203,5 +264,10 @@
     border: 2px solid white;
     border-radius: 50%;
 
+}
+/* Hover */
+.Contac.social.media a:hover{
+    transition: all 1s;
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
 }
 
